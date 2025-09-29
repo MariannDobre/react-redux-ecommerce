@@ -9,11 +9,11 @@
 .table-heading {
   width: 100%;
   height: 36px;
-  background-color: #49505710;
+  background-color: var(--bg-secondary-20);
   display: grid;
   grid-template-columns: 96px 1fr 160px 256px 128px 192px;
   grid-template-rows: 1;
-  border-bottom: 1px solid #49505750;
+  border-bottom: 1px solid var(--bg-secondary-50);
   border-radius: 6px 6px 0px 0px;
 }
 
@@ -27,12 +27,12 @@
 }
 
 .table-heading-cell-icon {
-  color: #e67700;
+  color: var(--accent-color);
   font-size: 14px;
 }
 
 .table-heading-cell-value {
-  color: #495057;
+  color: var(--text-secondary);
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.025em;
@@ -52,15 +52,15 @@
   display: grid;
   grid-template-columns: 96px 1fr 160px 256px 128px 192px;
   grid-template-rows: auto;
-  border-bottom: 1px solid #49505750;
+  border-bottom: 1px solid var(--bg-secondary-50);
 }
 
 .table-content-row:nth-child(odd) {
-  background-color: #f8f9fa;
+  background-color: var(--bg-primary);
 }
 
 .table-content-row:nth-child(even) {
-  background-color: #49505710;
+  background-color: var(--bg-secondary-20);
 }
 
 .row-cell {
@@ -70,7 +70,7 @@
   padding: 6px 9px;
   font-size: 14px;
   font-weight: 300;
-  color: #212529;
+  color: var(--text-primary);
   letter-spacing: 0.025em;
 }
 
@@ -82,7 +82,7 @@
 .row-name {
   outline: none;
   border: none;
-  border-right: 1px solid #49505750;
+  border-right: 1px solid var(--bg-secondary-50);
   text-decoration: none;
   cursor: pointer;
   transition: color 0.35s ease;
@@ -90,22 +90,22 @@
 
 .row-name:hover,
 .row-name:focus-visible {
-  color: #e67700;
+  color: var(--accent-color);
 }
 
 .row-status-stock {
-  color: #12b886;
+  color: var(--accent-stock);
 }
 
 .row-status-no-stock {
-  color: #f03e3e;
+  color: var(--accent-no-stock);
 }
 
 .row-status-stock-on-the-way {
-  color: #f59f00;
+  color: var(--accent-stock-on-the-way);
 }
 
 .table-heading div:not(:last-child),
 .table-content p:not(:last-child) {
-  border-right: 1px solid #49505750;
+  border-right: 1px solid var(--bg-secondary-50);
 }

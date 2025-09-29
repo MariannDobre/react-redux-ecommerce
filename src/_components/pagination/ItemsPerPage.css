@@ -21,12 +21,12 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  color: black;
+  color: var(--text-primary);
 }
 
 .items-per-page-count strong {
   font-weight: 500;
-  color: #e67700;
+  color: var(--accent-color);
 }
 
 .items-per-page-button {
@@ -41,15 +41,15 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: #49505720;
-  color: #000;
+  background-color: var(--bg-secondary-10);
+  color: var(--text-secondary-75);
   border-radius: 4px;
   transition: all 0.35s ease;
 }
 
 .items-per-page-button:hover,
 .items-per-page-button:focus-visible {
-  background-color: #49505735;
+  background-color: var(--bg-secondary-25);
 }
 
 .items-per-page-button:disabled {
@@ -67,7 +67,7 @@
   letter-spacing: 0.025em;
   outline: none;
   border: none;
-  background-color: #e67700;
+  background-color: var(--accent-color);
   color: white;
   border-radius: 4px;
   transition: all 0.35s ease;

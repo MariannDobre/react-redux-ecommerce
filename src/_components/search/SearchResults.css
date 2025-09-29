@@ -11,7 +11,7 @@
   height: auto;
   padding: 12px;
   border-radius: 6px;
-  background-color: #49505710;
+  background-color: var(--bg-secondary-20);
   backdrop-filter: blur(16px);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
   z-index: 10;
@@ -32,7 +32,7 @@
 .results-pagination-index {
   font-size: 14px;
   font-weight: 300;
-  color: #212529;
+  color: var(--text-primary);
   letter-spacing: 0.025em;
 }
 
@@ -40,7 +40,7 @@
 .results-count strong,
 .results-pagination-index strong {
   font-weight: 700;
-  color: #e67700;
+  color: var(--accent-color);
 }
 
 .results-count {
@@ -62,28 +62,28 @@
   font-size: 14px;
   text-decoration: none;
   letter-spacing: 0.025em;
-  background-color: #49505715;
+  background-color: var(--bg-secondary-15);
   transition: all 0.35s ease;
 }
 
 .results-link:hover,
 .results-link:focus-visible {
-  background-color: #49505725;
+  background-color: var(--bg-secondary-25);
 }
 
 .results-link-id {
   font-weight: 700;
-  color: black;
+  color: var(--text-primary);
 }
 
 .results-link-name {
   font-weight: 400;
-  color: #212529;
+  color: var(--text-secondary);
 }
 
 .results-link-type {
   font-weight: 300;
-  color: #212529;
+  color: var(--text-secondary-75);
 }
 
 .results-pagination-wrapper {
@@ -118,20 +118,21 @@
 
 .results-pagination-prev-page-button:not(:disabled),
 .results-pagination-next-page-button:not(:disabled) {
-  background-color: #49505720;
-  color: #000;
-  transition: background-color 0.35s ease;
+  background-color: var(--bg-secondary-15);
+  color: var(--text-primary);
+  transition: all 0.35s ease;
 }
 
 .results-pagination-prev-page-button:not(:disabled):hover,
 .results-pagination-prev-page-button:not(:disabled):focus-visible,
 .results-pagination-next-page-button:not(:disabled):hover,
 .results-pagination-next-page-button:not(:disabled):focus-visible {
-  background-color: #49505735;
+  background-color: var(--bg-secondary-25);
 }
 
 .results-pagination-prev-page-button:disabled,
 .results-pagination-next-page-button:disabled {
   cursor: default;
-  background-color: #49505705;
+  color: var(--text-secondary-75);
+  background-color: var(--bg-secondary-10);
 }

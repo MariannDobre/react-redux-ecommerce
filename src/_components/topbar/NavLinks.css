@@ -29,16 +29,16 @@
 .nav-link:focus-visible,
 .nav-link-active:hover,
 .nav-link-active:focus-visible {
-  background-color: #49505710;
+  background-color: var(--bg-secondary-15);
 }
 
 .nav-link {
-  color: #495057;
+  color: var(--text-secondary);
   font-weight: 300;
 }
 
 .nav-link-active {
-  color: black;
-  background-color: #49505710;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary-20);
   font-weight: 400;
 }
