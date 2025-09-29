@@ -1,0 +1,94 @@
+.theme-switcher-wrapper {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: transparent;
+  position: relative;
+}
+
+.theme-switcher-btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  background-color: #e67700;
+  border-radius: 6px;
+  transition: background-color 0.35s ease;
+}
+
+.theme-switcher-btn:hover,
+.theme-switcher-btn:focus-visible {
+  background-color: #f59f00;
+}
+
+.theme-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  width: 256px;
+  height: auto;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #49505710;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease;
+}
+
+.theme-menu-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(calc(100% - 24px));
+}
+
+.theme-menu-wrapper.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+
+.theme-menu-btn {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: auto;
+  padding: 6px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  justify-content: flex-start;
+  gap: 6px;
+  background-color: #49505715;
+  color: #495057;
+  transition: background-color 0.35s ease;
+}
+
+.theme-menu-btn:hover,
+.theme-menu-btn:focus-visible {
+  background-color: #49505720;
+}
+
+.theme-menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #e67700;
+}

@@ -1,0 +1,44 @@
+/* NavLinks component */
+.nav-list {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.nav-list-item {
+  list-style: none;
+}
+
+.nav-link,
+.nav-link-active {
+  outline: none;
+  border: none;
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.025em;
+  transition: all 0.35s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link-active:hover,
+.nav-link-active:focus-visible {
+  background-color: #49505710;
+}
+
+.nav-link {
+  color: #495057;
+  font-weight: 300;
+}
+
+.nav-link-active {
+  color: black;
+  background-color: #49505710;
+  font-weight: 400;
+}

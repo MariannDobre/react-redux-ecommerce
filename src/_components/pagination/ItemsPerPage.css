@@ -1,0 +1,74 @@
+.items-per-page-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12;
+}
+
+.items-per-page-control-panel {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.items-per-page-count {
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: black;
+}
+
+.items-per-page-count strong {
+  font-weight: 500;
+  color: #e67700;
+}
+
+.items-per-page-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #49505720;
+  color: #000;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+}
+
+.items-per-page-button:hover,
+.items-per-page-button:focus-visible {
+  background-color: #49505735;
+}
+
+.items-per-page-button:disabled {
+  cursor: default;
+}
+
+.items-per-page-button-active {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  outline: none;
+  border: none;
+  background-color: #e67700;
+  color: white;
+  border-radius: 4px;
+  transition: all 0.35s ease;
+}

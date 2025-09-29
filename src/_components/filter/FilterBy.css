@@ -1,0 +1,90 @@
+.filter-control-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.filter-control-container-heading {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 0.025em;
+}
+
+.filter-control-panel {
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.filter-container {
+  width: 192px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-label {
+  color: #495057;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  align-self: flex-start;
+  text-align: start;
+}
+
+.filter-box {
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+
+  &,
+  &::picker(select) {
+    appearance: base-select;
+    background-color: #f8f9fa;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 6px 9px;
+    border-radius: none;
+    line-height: 1.6;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+  }
+
+  &::picker(select) {
+    margin-block-start: 6px;
+  }
+
+  &::picker-icon {
+    display: none;
+  }
+
+  /* .picker {
+    transition: rotate 0.35s ease;
+
+    :open & {
+      rotate: 180deg;
+    }
+  } */
+}
+
+.filter-box::after {
+  content: '▼';
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translate(0, -50%);
+  color: black;
+  font-size: 12px;
+}
