@@ -42,3 +42,25 @@
   background-color: var(--bg-secondary-20);
   font-weight: 400;
 }
+
+.nav-link-cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -18px;
+  left: -12px;
+  color: #fff;
+  background-color: var(--accent-color);
+  z-index: 5;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+}

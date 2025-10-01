@@ -3,7 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './_components/layout/Layout';
 import HomePage from './_components/home/HomePage';
 import ProductsPage from './_components/products/ProductsPage';
-import IndividualProduct from './_components/products/IndividualProduct';
+import ProductPage from './_components/products/ProductPage';
+import CartPage from './_components/cart/CartPage';
 
 export default function App() {
   return (
@@ -23,8 +24,13 @@ export default function App() {
         />
 
         <Route
-          path='products/:productName'
-          element={<IndividualProduct />}
+          path='products/:id'
+          element={<ProductPage />}
+        />
+
+        <Route
+          path='cart'
+          element={<CartPage />}
         />
       </Route>
     </Routes>

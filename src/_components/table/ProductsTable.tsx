@@ -1,6 +1,6 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
-import type { Product } from '../../src/_data/products';
+import type { Product } from '../../_data/products';
 
 import {
   FaHashtag,
@@ -79,7 +79,7 @@ function ProductsTable({ products }: ComponentProps) {
             <p className='row-id row-cell'>{product.id}</p>
 
             <Link
-              to={`/products/${product.name}`}
+              to={`/products/${product.id}`}
               className='row-name row-cell'
             >
               {product.name}

@@ -1,0 +1,194 @@
+.cart-body-container {
+  width: 100%;
+  height: calc(100% - 256px - 36px);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: var(--bg-primary);
+  overflow-y: auto;
+}
+
+.cart-body-empty-msg {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: var(--text-primary);
+}
+
+.cart-body-row {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 32px;
+  width: 100%;
+  height: 96px;
+  background-color: var(--bg-secondary-10);
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.cart-body-image-container {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary-15);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.cart-body-product-image {
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.cart-body-details-container {
+  width: 640px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cart-body-product-name {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: var(--text-primary);
+}
+
+.cart-body-product-type {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  color: var(--text-secondary-75);
+}
+
+.cart-body-product-id,
+.cart-body-product-color {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  color: var(--text-secondary);
+}
+
+.cart-body-product-status {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+}
+
+.cart-body-product-status-tag {
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  padding: 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.cart-body-product-status-stock {
+  border: 1px solid var(--accent-stock);
+  color: var(--accent-stock);
+  background-color: #37b24d20;
+}
+
+.cart-body-product-status-no-stock {
+  border: 1px solid var(--accent-no-stock);
+  color: var(--accent-no-stock);
+  background-color: #f03e3e20;
+}
+
+.cart-body-product-status-stock-on-the-way {
+  border: 1px solid var(--accent-stock-on-the-way);
+  color: var(--accent-stock-on-the-way);
+  background-color: #f59f0020;
+}
+
+.cart-body-quantity-container {
+  width: 256px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.cart-body-quantity-decrease,
+.cart-body-quantity-increase {
+  outline: none;
+  border: 1px solid var(--text-secondary-75);
+  background-color: transparent;
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-weight: 500;
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+}
+
+.cart-body-quantity-decrease:not(:disabled):hover,
+.cart-body-quantity-decrease:not(:disabled):focus-visible,
+.cart-body-quantity-increase:not(:disabled):hover,
+.cart-body-quantity-increase:not(:disabled):focus-visible {
+  background-color: var(--bg-secondary-20);
+}
+
+.cart-body-quantity-tag {
+  font-size: 18px;
+  color: var(--text-primary);
+  letter-spacing: 0.025em;
+}
+
+.cart-body-product-price-tag {
+  width: 128px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+  letter-spacing: 0.025em;
+}
+
+.cart-body-remove-product {
+  outline: none;
+  border: none;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #ff6b6b;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+}
+
+.cart-body-remove-product:not(:disabled):hover,
+.cart-body-remove-product:not(:disabled):focus-visible {
+  background-color: #c92a2a;
+}

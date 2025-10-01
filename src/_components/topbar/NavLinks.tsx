@@ -1,8 +1,13 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import type { RootState } from '../../_context/store';
+
 import './NavLinks.css';
 
 export default function Links() {
   const { pathname } = useLocation();
+
+  const totalItems = useSelector((state: RootState) => state.cart.totalItems);
 
   return (
     <ul className='nav-list'>
@@ -26,7 +31,9 @@ export default function Links() {
         </Link>
       </li>
 
-      <li className='nav-list-item'>
+      <li className='nav-list-item nav-link-cart'>
+        <span className='cart-count'>{totalItems}</span>
+
         <Link
           to='/cart'
           title='Navigate to the edit page'

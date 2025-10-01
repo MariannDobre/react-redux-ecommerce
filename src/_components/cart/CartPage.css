@@ -1,0 +1,7 @@
+.cart-page-container {
+  width: 100%;
+  height: calc(100vh - 72px - 48px);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
