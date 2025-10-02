@@ -21,12 +21,12 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
 }
 
 .items-per-page-count strong {
   font-weight: 500;
-  color: var(--accent-color);
+  color: rgb(var(--accent-color));
 }
 
 .items-per-page-button {
@@ -41,15 +41,15 @@
   outline: none;
   border: none;
   cursor: pointer;
-  background-color: var(--bg-secondary-10);
-  color: var(--text-secondary-75);
+  background-color: rgb(var(--bg-secondary), 0.1);
+  color: rgb(var(--text-secondary), 0.75);
   border-radius: 4px;
   transition: all 0.35s ease;
 }
 
 .items-per-page-button:hover,
 .items-per-page-button:focus-visible {
-  background-color: var(--bg-secondary-25);
+  background-color: rgb(var(--bg-secondary), 0.25);
 }
 
 .items-per-page-button:disabled {
@@ -67,7 +67,7 @@
   letter-spacing: 0.025em;
   outline: none;
   border: none;
-  background-color: var(--accent-color);
+  background-color: rgb(var(--accent-color));
   color: white;
   border-radius: 4px;
   transition: all 0.35s ease;

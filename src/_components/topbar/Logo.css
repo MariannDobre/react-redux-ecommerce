@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: start;
   gap: 12px;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 0.025em;
@@ -16,6 +16,6 @@
 }
 
 .logo-icon {
-  color: var(--accent-color);
+  color: rgb(var(--accent-color));
   font-size: 36px;
 }

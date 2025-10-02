@@ -13,12 +13,12 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
 }
 
 .page-navigation-count strong {
   font-weight: 500;
-  color: var(--accent-color);
+  color: rgb(var(--accent-color));
 }
 
 .page-navigation-control-panel {
@@ -44,8 +44,8 @@
 
 .next-page-button:not(:disabled),
 .prev-page-button:not(:disabled) {
-  background-color: var(--bg-secondary-15);
-  color: var(--text-primary);
+  background-color: rgb(var(--bg-secondary), 0.15);
+  color: rgb(var(--text-primary));
   transition: all 0.35s ease;
 }
 
@@ -53,12 +53,12 @@
 .next-page-button:not(:disabled):focus-visible,
 .prev-page-button:not(:disabled):hover,
 .prev-page-button:not(:disabled):focus-visible {
-  background-color: var(--bg-secondary-25);
+  background-color: rgb(var(--bg-secondary), 0.25);
 }
 
 .prev-page-button:disabled,
 .next-page-button:disabled {
   cursor: default;
-  color: var(--text-secondary-75);
-  background-color: var(--bg-secondary-10);
+  color: rgb(var(--text-secondary), 0.75);
+  background-color: rgb(var(--bg-secondary), 0.1);
 }

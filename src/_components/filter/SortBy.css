@@ -11,7 +11,7 @@
   width: fit-content;
   font-size: 16px;
   font-weight: 500;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
   letter-spacing: 0.025em;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .sorting-label {
-  color: var(--text-secondary);
+  color: rgb(var(--text-secondary));
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.025em;
@@ -50,8 +50,8 @@
   &,
   &::picker(select) {
     appearance: base-select;
-    color: var(--text-primary);
-    background-color: var(--bg-primary);
+    color: rgb(var(--text-primary));
+    background-color: rgb(var(--bg-primary));
     border: none;
     outline: none;
     cursor: pointer;
@@ -86,6 +86,6 @@
   top: 50%;
   right: 9px;
   transform: translate(0, -50%);
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
   font-size: 12px;
 }

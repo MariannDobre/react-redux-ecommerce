@@ -10,5 +10,5 @@
 .horizontal-line {
   width: 100%;
   height: 1px;
-  background-color: var(--bg-secondary-50);
+  background-color: rgb(var(--bg-secondary), 0.5);
 }

@@ -5,13 +5,13 @@
   align-items: center;
   justify-content: flex-start;
   gap: 6px;
-  background-color: var(--bg-secondary-20);
+  background-color: rgb(var(--bg-secondary), 0.2);
   padding: 6px 9px;
   border-radius: 6px;
 }
 
 .search-icon {
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
   font-size: 16px;
   width: fit-content;
 }
@@ -22,16 +22,16 @@
   background-color: transparent;
   flex-grow: 1;
   height: auto;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.025em;
-  caret-color: var(--accent-color);
+  caret-color: rgb(var(--accent-color));
 }
 
 .search-input::placeholder {
   font-size: 14px;
-  color: var(--text-secondary-75);
+  color: rgb(var(--text-secondary), 0.75);
   font-weight: 300;
   letter-spacing: 0.025em;
 }

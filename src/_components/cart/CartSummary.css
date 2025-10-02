@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--bg-secondary-20);
+  background-color: rgb(var(--bg-secondary), 0.2);
   border-radius: 6px;
 }
 
@@ -21,25 +21,25 @@
 
 .cart-summary-row:not(:last-child) {
   padding-bottom: 12px;
-  border-bottom: 1px solid var(--text-secondary-75);
+  border-bottom: 1px solid rgb(var(--text-secondary), 0.75);
 }
 
 .cart-summary-row-label {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.025em;
-  color: var(--text-secondary);
+  color: rgb(var(--text-secondary));
 }
 
 .cart-summary-row-value {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
 }
 
 .cart-summary-clear {
-  outline: 1px solid var(--text-primary);
+  outline: 1px solid rgb(var(--text-primary));
   border: none;
   cursor: pointer;
   width: auto;
@@ -47,7 +47,7 @@
   padding: 9px 12px;
   border-radius: 6px;
   background-color: transparent;
-  color: var(--text-primary);
+  color: rgb(var(--text-primary));
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.025em;
@@ -56,18 +56,18 @@
 
 .cart-summary-clear:not(:disabled):hover,
 .cart-summary-clear:not(:disabled):focus-visible {
-  background-color: var(--bg-secondary-20);
+  background-color: rgb(var(--bg-secondary), 0.2);
 }
 
 .cart-summary-checkout {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid rgb(var(--accent-color));
   border: none;
   cursor: pointer;
   width: auto;
   height: auto;
   padding: 9px 12px;
   border-radius: 6px;
-  background-color: var(--accent-color);
+  background-color: rgb(var(--accent-color));
   color: #fff;
   font-size: 16px;
   font-weight: 500;
@@ -77,8 +77,8 @@
 
 .cart-summary-checkout:not(:disabled):hover,
 .cart-summary-checkout:not(:disabled):focus-visible {
-  outline-color: var(--accent-color-light);
-  background-color: var(--accent-color-light);
+  outline-color: rgb(var(--accent-color-light));
+  background-color: rgb(var(--accent-color-light));
 }
 
 .cart-summary-clear:disabled,

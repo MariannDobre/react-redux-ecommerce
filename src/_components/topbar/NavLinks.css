@@ -29,17 +29,17 @@
 .nav-link:focus-visible,
 .nav-link-active:hover,
 .nav-link-active:focus-visible {
-  background-color: var(--bg-secondary-15);
+  background-color: rgba(var(--bg-secondary), 0.15);
 }
 
 .nav-link {
-  color: var(--text-secondary);
+  color: rgb(var(--text-secondary));
   font-weight: 300;
 }
 
 .nav-link-active {
-  color: var(--text-primary);
-  background-color: var(--bg-secondary-20);
+  color: rgb(var(--text-primary));
+  background-color: rgb(var(--bg-secondary), 0.2);
   font-weight: 400;
 }
 
@@ -52,7 +52,7 @@
   top: -18px;
   left: -12px;
   color: #fff;
-  background-color: var(--accent-color);
+  background-color: rgb(var(--accent-color));
   z-index: 5;
   font-size: 12px;
   font-weight: 700;
